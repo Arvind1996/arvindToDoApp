@@ -1,0 +1,32 @@
+/* Global Typography and Base Resets */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Scrollbar for list container if needed */
+ul#taskList::-webkit-scrollbar {
+  width: 6px;
+}
+
+ul#taskList::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+ul#taskList::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.4);
+  border-radius: 9999px;
+}
+
+/* Smooth Focus Rings */
+input:focus,
+select:focus,
+button:focus {
+  outline: none;
+}
+
+/* Task Item Transitions */
+.task-item {
+  transition: all 0.15s ease-in-out;
+}
